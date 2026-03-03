@@ -14,7 +14,18 @@ A Next.js 16 app (App Router, Turbopack, React 19, Tailwind CSS 4, shadcn/ui) th
 - **Do NOT modify files in `components/ui/`** — these are stock shadcn/ui components.
 - **Do NOT inline Agora SDK imports at file top level** — `agora-rtc-sdk-ng` and `agora-rtm` require browser APIs and crash SSR. They must be dynamically imported inside async functions.
 - **Do NOT add transcripts to the chat UI on RTM send** — the agent echoes them back via the RTC stream-message listener, so they appear automatically.
-- **Copy `public/agora.svg` as-is** — it's the logo referenced in the header.
+- **Copy `public/agora.svg` as-is** — it's the Agora logo referenced in the header. Do not regenerate or substitute with a placeholder.
+
+## Assets
+
+- **`public/agora.svg`** — The Agora logo (cyan "a" shape, `#00C2FF` fill). This file must be copied exactly from the repo — do not generate a replacement or use a placeholder SVG.
+
+## Styling Rules
+
+- All primary action buttons (mic toggle when unmuted, chat send button) use `bg-primary text-primary-foreground` — they must match visually
+- Destructive actions (hangup button) use `bg-destructive text-destructive-foreground`
+- Muted/disabled state (mic when muted) uses `bg-muted text-muted-foreground`
+- The theme is defined in `app/globals.css` via CSS custom properties — do not hardcode colors, use the Tailwind theme tokens (`primary`, `muted`, `destructive`, etc.)
 
 ## File Structure
 
