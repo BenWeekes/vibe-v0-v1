@@ -29,7 +29,11 @@ When prompted for environment variables, provide:
 
 **v0 (Vercel):**
 - Create a new **Project** first (not just a chat) before entering the prompt — this works more reliably
-- Environment variables: **Project** > **Settings** > **Environment Variables**
+- Environment variables: click the project name dropdown in the title bar, then **Settings** > **Environment Variables**
+
+  <img src="docs/v0-project-menu.png" width="360" alt="v0 project dropdown menu showing Settings option" />
+  <img src="docs/v0-env-vars.png" width="480" alt="v0 Settings Environment Variables panel" />
+
 - v0 may regenerate `styles/globals.css` — that's fine, the real theme is in `app/globals.css`
 - The SVG logo at `public/agora.svg` must be copied as-is
 
