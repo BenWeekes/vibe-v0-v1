@@ -28,6 +28,7 @@ When prompted for environment variables, provide:
 <!-- PLATFORM_TIPS_START -->
 
 **v0 (Vercel):**
+- Create a new **Project** first (not just a chat) before entering the prompt — this works more reliably
 - Environment variables: **Project** > **Settings** > **Environment Variables**
 - v0 may regenerate `styles/globals.css` — that's fine, the real theme is in `app/globals.css`
 - The SVG logo at `public/agora.svg` must be copied as-is
