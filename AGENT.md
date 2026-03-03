@@ -6,6 +6,8 @@ This file is for AI coding assistants. Read it in full before making changes.
 
 A Next.js 16 app (App Router, Turbopack, React 19, Tailwind CSS 4, shadcn/ui) that connects to an Agora Conversational AI voice agent. The app handles real-time audio via Agora RTC, text messaging via Agora RTM, and live transcripts via RTC stream-message.
 
+**This code has been tested locally and is built with the v0 (Vercel) platform in mind.** All files are complete and working — import them as-is and wire up environment variables. Do not rewrite or restructure existing components.
+
 ## Critical Rules
 
 - **Do NOT modify `app/globals.css`** — it contains the custom Agora brand theme (dark + light mode with cyan/teal primary colors, agent orb CSS vars, scrollbar styles). The `styles/globals.css` is a scaffold copy and can be ignored.
